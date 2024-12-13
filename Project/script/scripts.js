@@ -45,14 +45,13 @@ form.onsubmit = (event) => {
     
     listItem.forEach((item) => {
         const itemIsChecked = item.childNodes[0].childNodes[0]
-        const textSpan = item.childNodes[0].childNodes[1]
+        const contentSpan = item.childNodes[0].childNodes[1]
         itemIsChecked.addEventListener("change", (event) => {
-            console.log(event.target.checked)
             if(event.target.checked){
-                textSpan.classList.add("checkedItem")
+                contentSpan.classList.add("checkedItem")
                 return
             }
-            textSpan.classList.remove("checkedItem")
+            contentSpan.classList.remove("checkedItem")
         })
         
         const trashButton = item.childNodes[1]
