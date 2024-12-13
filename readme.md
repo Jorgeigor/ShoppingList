@@ -17,7 +17,8 @@ QuickList é um aplicativo web simples e intuitivo para gerenciar sua lista de c
 |-- home.html
 |-- style.css
 |-- homeStyle.css
-|-- script.js
+|-- script
+    |-- scripts.js
 |-- image/
     |-- logoDark.svg
     |-- logoLight.png
