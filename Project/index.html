@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickList</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="image/logoDark.svg" class="logo" alt="">
+    <main id="global">
+        <div class="utilityItemBox">
+            <span> <a href="/Project/home.html" class="returnLink"><ion-icon name="arrow-back-outline"></ion-icon> Voltar</a></span>
+            <button id="themeButton" onclick="toggleMod()"><ion-icon name="sunny-outline"></ion-icon></button>
+        </div>
+        <div class="textList">
+            <h1>Listagem de produtos</h1>
+        </div>
+            
+            <form>
+            <label for="itensBar">
+                <input type="text" name="itensBar" id="itensBar" placeholder="Adicione um novo item" required>
+                <button class="addNewItem">Adiconar Item</button>
+            </label>
+        </form>
+        <div class="contentBox"></div>
+        <div class="errorMessage">
+            <span class="message"><img src="/Project/image/warning-circle-filled.svg" alt=""> O item foi removido da lista</span>
+        </div>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="/Project/script/scripts.js"></script>
+</body>
+</html>

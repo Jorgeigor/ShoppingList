@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --highlight-color: linear-gradient(135deg, #000000, #0A0A23, #001F4D);     
+    --icon-color: white;
+    --link-color:  #00d4ff;
+    --text-color: white;
+    --button-color: #00d4ff;
+    --alert-border: 1px solid #C93847;
+}
+
+.light{
+    --icon-color: black;
+    --highlight-color: white;
+    --link-color:  #CA3884;  
+    --text-color: black;
+    --button-color: #CA3884;
+    --alert-border: 1px solid #D1D5DB;
+
+}
+
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--highlight-color);
+    
+}
+img{
+
+    padding: 15px;
+}
+
+#global {
+    height: 100%;
+    width: 627px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.utilityItemBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+    height: 23px;
+}
+
+.returnLink{
+    list-style: none;
+    text-decoration: none;
+    color: var(--link-color);
+    
+}
+
+#themeButton{
+    background: 0;
+    border: 0;
+    height: 20px;
+    cursor: pointer;
+}
+
+#themeButton ion-icon{
+    font-size: 20px;
+    color: var(--icon-color);
+}
+
+.textList{
+    display: flex;
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 32px;
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#itensBar{
+    width: 451px;
+    height: 41px;
+    border-radius: 11px;
+    border: 1px solid #D1D5DB;
+    padding: 11px 18px ;
+    margin-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.addNewItem{
+    width: 170px;
+    height: 41px;
+    border-radius: 11px;
+    background-color: var(--button-color);
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contentBox{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    
+    
+}
+.elementList{
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #D1D5DB;
+    padding: 11px 15px;
+    background-color: white;
+    width: 621px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    font-size: 15px;
+    
+}
+.leftContent{
+    display: flex;
+    align-items: start;
+    gap: 8px;
+}
+
+.leftContent > input[type = "checkbox"] {
+    
+    border-radius: 50%;
+}
+
+.checkedItem{
+    text-decoration: line-through;
+}
+
+.removeButton{
+    padding: 0;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-image: url(./image/Trash.png);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.removeButton img{
+    padding: 10px;
+}
+
+.elementList .removeItem {
+    display: none;
+}
+
+.errorMessage{
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #D1D5DB;
+    padding: 11px 15px;
+    background-color: #C93847;
+    width: 621px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    display: none;
+    margin-top: 20px;
+    font-size: 14px;
+    
+
+}
+.active{
+    font-family: Arial, Helvetica, sans-serif;
+    border: var(--alert-border);
+    padding: 11px 15px;
+    background-color: #C93847;
+    width: 621px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    display: block;
+}
+
+.message{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    
+}
+
+.message img{
+    
+    padding: 0;
+}
+
+
+
