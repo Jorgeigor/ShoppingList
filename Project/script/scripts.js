@@ -29,6 +29,7 @@ form.onsubmit = (event) => {
         const leftContent = document.createElement('div')
         leftContent.appendChild(checkBox)
         leftContent.appendChild(text)
+        checkBox.className = "checkBox"
         leftContent.className = "leftContent"
         new_element.className = "elementList"
         buttonTrash.className = "removeButton"

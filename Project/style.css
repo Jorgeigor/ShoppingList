@@ -10,6 +10,8 @@
     --link-color:  #00d4ff;
     --text-color: white;
     --button-color: #00d4ff;
+    --active-input: #00d4ff;
+    --colorChecked: #00d4ff;
     --alert-border: 1px solid #C93847;
 }
 
@@ -19,6 +21,8 @@
     --link-color:  #CA3884;  
     --text-color: black;
     --button-color: #CA3884;
+    --active-input: #CA3884;
+    --colorChecked: #CA3884;
     --alert-border: 1px solid #D1D5DB;
 
 }
@@ -99,6 +103,14 @@ img{
     font-size: 15px;
 }
 
+#itensBar:focus{
+    outline-color: var(--active-input);
+}
+
+#itensBar:focus::placeholder{
+    color: #080B12;
+}
+
 .addNewItem{
     width: 170px;
     height: 41px;
@@ -138,9 +150,23 @@ img{
     gap: 8px;
 }
 
-.leftContent > input[type = "checkbox"] {
-    
-    border-radius: 50%;
+.checkBox{
+    width: 17px;
+    height: 17px;
+    border-radius: 40%;
+    vertical-align: middle;
+    border: 2px solid #D1D5DB;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkBox:checked{
+    background-color: var(--colorChecked);
+    background-image: url("./image/Frame.svg");
+    background-size: 14px 13px;
+    background-repeat: no-repeat;
 }
 
 .checkedItem{
